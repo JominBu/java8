@@ -1,6 +1,8 @@
 package com.jd;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.Optional;
 import java.util.function.Supplier;
 
 /**
@@ -9,12 +11,12 @@ import java.util.function.Supplier;
  */
 public class App 
 {
+    private String a;
     public static void main( String[] args )
     {
-        Arrays.asList("a","b","c").stream().filter(s -> s.equals("a")).forEach(e -> System.out.println(e));
 
-
-
+//        Arrays.asList("a","b","c").stream().filter(s -> s.equals("a")).map(a->a+"b").forEach(e -> System.out.println(e));
+//
         Thread thread1 = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -29,6 +31,12 @@ public class App
         thread1.start();
         thread2.start();
 
+
+//        Optional<String> fullName = Optional.ofNullable(null);
+//        System.out.println("Full name is set?" + fullName.isPresent());
+//        System.out.println("Full name: " + fullName.orElseGet(()->"[none]"));
+//        System.out.println(fullName.map(s -> "Hey " + s + "!").orElse("Hey Stranger!"));
+//        System.out.println("Full name is set?" + fullName.isPresent());
 
 //        Defaultable defaultable = DefaultableFactory.create(DefaultableImpl::new);
 //        System.out.println(defaultable.notRequired());
