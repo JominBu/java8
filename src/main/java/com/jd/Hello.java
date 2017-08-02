@@ -12,6 +12,7 @@ public class Hello {
     Runnable r2 = () -> {
         System.out.println(toString());
     };
+    private Runnable r3;
 
     public String toString() {
         return "Hello world";
@@ -21,13 +22,13 @@ public class Hello {
         new Hello().r1.run();
         new Hello().r2.run();
         Hello hello = new Hello();
-        hello.r2 = new Runnable() {
+        hello.r3 = new Runnable() {
             @Override
             public void run() {
                 System.out.println(this);
             }
         };
-        hello.r2.run();
+        hello.r3.run();
     }
 
 }
