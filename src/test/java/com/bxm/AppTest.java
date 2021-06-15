@@ -1,4 +1,4 @@
-package com.jd;
+package com.bxm;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

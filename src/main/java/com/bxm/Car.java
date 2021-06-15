@@ -1,4 +1,4 @@
-package com.jd;
+package com.bxm;
 
 import java.util.Arrays;
 import java.util.List;

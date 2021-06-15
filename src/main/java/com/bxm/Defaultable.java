@@ -1,4 +1,4 @@
-package com.jd;
+package com.bxm;
 
 /**
  * Created by buxiaoming on 2017/3/30.
